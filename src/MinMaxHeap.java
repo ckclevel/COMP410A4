@@ -10,7 +10,7 @@ public class MinMaxHeap {
 		currentSize = 0;
 	}
 	
-	public boolean isFull(){return currentSize == arr.length - 1;}
+	public boolean isFull() {return currentSize == arr.length - 1;}
 	public boolean isEmpty(){return currentSize == 0;}
 	
 	// COMPLETE THE FOLLOWING METHODS
@@ -38,14 +38,14 @@ public class MinMaxHeap {
 		
 	
 	public int min() {
-		if(currentSize == 0) { return 0;}
+		if(currentSize == 0) return 0;
 		return arr[1];
 	}
 	
 	public int max() {
-		if(currentSize == 0) { return 0; }
-		if(currentSize == 1) { return arr[1];} 
-		if(currentSize == 2) { return arr[2];}
+		if(currentSize == 0)  return 0; 
+		if(currentSize == 1)  return arr[1];
+		if(currentSize == 2)  return arr[2];
 		if(arr[2] > arr[3]) {
 			return arr[2];
 		} else return arr[3];
